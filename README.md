@@ -4,7 +4,7 @@
 
 <img src="https://img.shields.io/badge/Independent%20Researcher-%F0%9F%94%AD%20Quantum%20Physics-9B59B6?style=for-the-badge" alt="Researcher"/>  
 <img src="https://img.shields.io/badge/Systems%20Architect-%E2%9A%A1%20Innovation-8E44AD?style=for-the-badge" alt="Architect"/>  
-<img src="https://img.shields.io/badge/Brazilian-%F0%9F%87%A7%F0%9F%87%B7%20Visionary-E74C3C?style=for-the-badge" alt="Brazilian"/>
+<img src="https://img.shields.io/badge/Brazilian-%F0%9F%87%A7%F0%9F%87%B7%20OpenSource-E74C3C?style=for-the-badge" alt="Brazilian"/>
 
 ✨ *Independent researcher weaving quantum physics, infinite coherence, and ethical systems into the future. Passionate about fractal beauty, harmony, and empowering technology.* ✨
 
