@@ -61,7 +61,7 @@ Innovative OS designs, ethical overlays, and prototypes for sustainable, human-c
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/reinhardtmarta/osai">
+      <a href="https://github.com/reinhardtmarta/OSAI-APP">
         <img width="200" src="https://opengraph.githubassets.com/1/reinhardtmarta/osai" alt="osai"/><br/>
         <strong>OSAI</strong><br/>Ethical AI overlay with human-in-the-loop safety
       </a>
