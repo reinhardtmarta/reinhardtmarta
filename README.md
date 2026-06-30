@@ -22,8 +22,8 @@ I'm a Brazilian software developer deeply immersed in **systems architecture**, 
 
 | Repository | The Challenge | The Developed Solution |
 | :--- | :--- | :--- |
-| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Vague or complex architectural bottlenecks. | Concrete structural logic and automation script. |
-| [**SCAA**](https://github.com/reinhardtmarta/scaa) | Inefficiencies in data coherence or processing. | Clean, resilient computing patterns. |
+| [**SCAA**](https://github.com/reinhardtmarta/scaa) | Vague or complex architectural bottlenecks. | Concrete structural logic and automation script. |
+| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Inefficiencies in data coherence or processing. | Clean, resilient computing patterns. |
 
 <br>
 
