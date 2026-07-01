@@ -39,3 +39,7 @@ Meu trabalho consiste em analisar sistemas de forma ampla, transformando desafio
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=reinhardtmarta&theme=transparent" alt="Estatísticas"/>
 
 </div>
+
+---
+
+> *"Enquanto existirem problemas reais em sistemas complexos, é necessário existirem pessoas que, pelo menos, tentem resolvê-los."*
