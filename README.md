@@ -22,9 +22,9 @@ I'm a Brazilian software developer deeply immersed in **systems architecture**, 
 
 | Repository | The Challenge | The Developed Solution |
 | :--- | :--- | :--- |
-| [**SCAA**](https://github.com/reinhardtmarta/scaa) | Structural architecture and automation experiments.|
-| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) |Logic-oriented workflows and resilient processing patterns. |
-| [**Cfam**](https://github.com/reinhardtmarta/cfam | Deterministic context filtering for AI systems, reducing inconsistency and improving decision reliability.|
+| [**SCAA**](https://github.com/reinhardtmarta/scaa) | All components run at full cost regardless of what the task requires | Structural architecture and automation experiments.|
+| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Logistic and waste | Logic-oriented workflows and resilient processing patterns. |
+| [**Cfam**](https://github.com/reinhardtmarta/cfam)| AI vulnerabilities | Deterministic context filtering for AI systems |reducing inconsistency and improving decision reliability.|
 <br>
 
 <div align="center">
