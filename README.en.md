@@ -40,3 +40,6 @@ I'm a Brazilian software developer deeply immersed in **systems architecture**, 
 </div>
 <div align="center">
 
+
+> *"As long as real problems exist in complex systems, there must be people who at least try to solve them."*
+
