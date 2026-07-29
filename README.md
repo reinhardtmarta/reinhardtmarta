@@ -7,6 +7,7 @@
 
 <img src="https://img.shields.io/badge/Desenvolvedora%20de%20Software-4F46E5?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Cibersegurança%20%7C%20Dados%20%7C%20IA-7C3AED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Dados%20%7C%20-7C3AED?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Open%20Source-16A34A?style=for-the-badge" />
 
 Desenvolvedora de software autodidata, apaixonada por resolver problemas através da tecnologia.
