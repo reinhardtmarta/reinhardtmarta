@@ -6,7 +6,7 @@
 
 
 <img src="https://img.shields.io/badge/Desenvolvedora%20de%20Software-4F46E5?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Automação%20%7C%20-4F46E5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Automação-7C3AED?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Artificial%20Inteligence-16A34A?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Cibersegurança-7C3AED?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Dados%20%7C%20-4F46E5?style=for-the-badge" />
