@@ -1,4 +1,5 @@
 <div align="center">🇧🇷 Português | "🇺🇸 English" (README.en.md)
+-
 
 
 <img src="https://img.shields.io/badge/Desenvolvedora%20de%20Software-4F46E5?style=for-the-badge" />
