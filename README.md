@@ -1,45 +1,72 @@
-<div align="center">
+<div align="center">🇧🇷 Português | "🇺🇸 English" (README.en.md)
 
-🇧🇷 **Português** | [🇺🇸 English](README.en.md)
 
-# 🌸 Olá, eu sou Marta Reinhardt
+<img src="https://img.shields.io/badge/Desenvolvedora%20de%20Software-4F46E5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Cibersegurança%20%7C%20Dados%20%7C%20IA-7C3AED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Open%20Source-16A34A?style=for-the-badge" />Desenvolvedora de software autodidata, apaixonada por resolver problemas através da tecnologia.
 
-<img src="https://img.shields.io/badge/Arquiteta%20de%20Sistemas-%E2%9A%A1%20Resolu%C3%A7%C3%A3o%20de%20Problemas-9B59B6?style=for-the-badge" alt="Arquiteta"/>  
-<img src="https://img.shields.io/badge/Agn%C3%B3stica%20em%20Tecnologia-%F0%9F%94%A7%20Solu%C3%A7%C3%B5es-8E44AD?style=for-the-badge" alt="Soluções"/>  
-<img src="https://img.shields.io/badge/Brasileira-%F0%9F%87%A7%F0%9F%87%B7%20Open%20Source-E74C3C?style=for-the-badge" alt="Brasileira"/>
+Atualmente estudo Cibersegurança, SQL, Engenharia de Dados e Inteligência Artificial, aplicando o aprendizado em projetos práticos publicados no GitHub.
 
-✨ *Desenvolvedora de software e arquiteta de sistemas com foco em eficiência estrutural. Guiada pela lógica, automação e pela construção de tecnologias éticas e resilientes.* ✨
+</div>---
 
-</div>
+🌱 Sobre mim
 
-## 🌺 Sobre mim
+Sou desenvolvedora de software com foco em aprendizado contínuo e desenvolvimento prático.
 
-Sou uma desenvolvedora brasileira profundamente interessada em **arquitetura de sistemas**, **computação resiliente** e **automação prática**.
+Gosto de compreender como sistemas funcionam internamente, identificar problemas e construir soluções que sejam simples, organizadas e confiáveis.
 
-Meu trabalho consiste em analisar sistemas de forma ampla, transformando desafios operacionais complexos em soluções limpas, eficientes e sustentáveis.
+Tenho interesse em:
 
-- 🔭 Explorando atualmente: padrões resilientes para back-end, otimização de sistemas e fluxos de automação.
-- 🌱 Aprendizado contínuo: arquitetura de software e raciocínio estrutural.
-- 💜 Valores: eficiência estrutural, ética, resiliência e colaboração em código aberto.
-- 📫 Contato: aqui mesmo no GitHub.
-
-## 📂 Soluções e Repositórios Públicos
-
-| Repositório | O desafio | A solução desenvolvida |
-| :--- | :--- | :--- |
-| [**SCAA**](https://github.com/reinhardtmarta/scaa) | Todos os componentes executam com custo máximo independentemente da necessidade da tarefa. | Experimentos em arquitetura estrutural e automação. |
-| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Problemas de logística e desperdício. | Fluxos orientados por lógica e padrões de processamento resilientes. |
-| [**CFAM**](https://github.com/reinhardtmarta/cfam) | Vulnerabilidades em sistemas de IA. | Filtragem determinística de contexto para reduzir inconsistências e aumentar a confiabilidade das decisões. |
-
-<br>
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=reinhardtmarta&theme=transparent" alt="Atividade GitHub"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=reinhardtmarta&theme=transparent" alt="Estatísticas"/>
-
-</div>
+- Arquitetura de Software
+- Desenvolvimento Seguro
+- Cibersegurança
+- Engenharia de Dados
+- Inteligência Artificial
+- Automação
+- Sistemas Distribuídos
+- Open Source
 
 ---
 
-> *"Enquanto existirem problemas reais em sistemas complexos, é necessário existirem pessoas que, pelo menos, tentem resolvê-los."*
+🚀 Projetos
+
+Projeto| Objetivo
+LogiFlow| Plataforma voltada para otimização logística e redução de desperdícios.
+CFAM| Experimentos com arquitetura para aumentar a confiabilidade de sistemas de IA.
+SCAA| Estudos sobre automação, organização estrutural e eficiência computacional.
+
+---
+
+📚 Atualmente estudando
+
+- Google Cybersecurity Certificate
+- SQL
+- Engenharia de Dados
+- Desenvolvimento Seguro
+- Inteligência Artificial
+- Arquitetura de Sistemas
+
+---
+
+🛠️ Tecnologias
+
+- Flutter
+- Dart
+- Python
+- SQL
+- Git
+- GitHub
+- Linux
+  
+
+---
+
+🎯 Objetivo
+
+Continuar evoluindo como desenvolvedora, contribuir para projetos de impacto e construir soluções que unam tecnologia, segurança e eficiência.
+
+---
+
+<div align="center">"Aprender continuamente é a melhor forma de construir soluções melhores."
+
+</div>
