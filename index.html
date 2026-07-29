@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marta Reinhardt - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+            --card-bg: #161b22;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: var(--card-bg);
+            color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--border-color);
+            border-color: var(--text-muted);
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        blockquote {
+            margin: 0;
+            padding: 15px 20px;
+            border-left: 4px solid var(--accent-color);
+            background-color: var(--bg-color);
+            font-style: italic;
+            color: #ffffff;
+            border-radius: 0 6px 6px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Welcome!</h1>
+        <p>Software Developer focused on building reliable, secure, and practical solutions. Currently studying Cybersecurity, Data Engineering, and Artificial Intelligence through hands-on projects.</p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="https://github.com/reinhardtmarta" class="btn" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>About me</h2>
+        <p>I enjoy understanding how systems work before trying to improve them.</p>
+        <p>My approach combines software development, security, automation, and continuous learning. I believe technology should be reliable, maintainable, and built to solve real-world problems.</p>
+    </section>
+
+    <section>
+        <h2>Interests</h2>
+        <p>Currently exploring:</p>
+        <ul>
+            <li>Software Architecture</li>
+            <li>Cybersecurity</li>
+            <li>Data Engineering</li>
+            <li>Artificial Intelligence</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What I Build</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Software Development</h3>
+                <p>Building applications with Flutter, Python, and SQL.</p>
+            </div>
+            <div class="card">
+                <h3>Cybersecurity</h3>
+                <p>Learning secure software design and defensive engineering.</p>
+            </div>
+            <div class="card">
+                <h3>AI Systems</h3>
+                <p>Exploring reliable AI architectures and deterministic workflows.</p>
+            </div>
+            <div class="card">
+                <h3>Automation</h3>
+                <p>Designing workflows that reduce unnecessary complexity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>CFAM</h3>
+                <p>Deterministic filtering layer for AI systems.</p>
+            </div>
+            <div class="card">
+                <h3>LogiFlow</h3>
+                <p>Food rescue and logistics platform.</p>
+            </div>
+            <div class="card">
+                <h3>SCAA</h3>
+                <p>Architecture experiments focused on efficiency and automation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>What I'm learning and studying</h2>
+        <p>Currently Learning:</p>
+        <ul>
+            <li>✓ Google Cybersecurity Professional Certificate</li>
+            <li>✓ SQL</li>
+            <li>✓ Data Engineering</li>
+            <li>✓ AI</li>
+            <li>✓ Secure Software Development</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Philosophy</h2>
+        <blockquote>"Technology is most valuable when it helps protect people, strengthen systems and solve meaningful problems."</blockquote>
+        <p style="margin-top: 20px; text-align: center; color: #ffffff;">Let's build reliable technology.</p>
+    </section>
+
+    <footer>
+        <p>
+            <a href="https://github.com/reinhardtmarta" target="_blank">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/martareinhardt/" target="_blank">LinkedIn</a> | 
+            <a href="mailto:martareinhardt@proton.me">Email</a>
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
