@@ -5,8 +5,6 @@
 </div>
 <div align="center">
 
-# 🌸 Hello, I'm Marta Reinhardt
-
 <img src="https://img.shields.io/badge/Systems%20Architect-%E2%9A%A1%20Problem%20Solving-9B59B6?style=for-the-badge" alt="Architect"/>  
 <img src="https://img.shields.io/badge/Tech%20Agnostic-%F0%9F%94%A7%20Solutions-8E44AD?style=for-the-badge" alt="Solutions"/>  
 <img src="https://img.shields.io/badge/Brazilian-%F0%9F%87%A7%F0%9F%87%B7%20OpenSource-E74C3C?style=for-the-badge" alt="Brazilian"/>
