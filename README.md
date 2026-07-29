@@ -1,4 +1,7 @@
-<div align="center">🇧🇷 Português | "🇺🇸 English" (README.en.md)
+[English](README.en.md) | **Português**
+
+</div>
+<div align="center">
 -
 
 
