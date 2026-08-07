@@ -1,321 +1,428 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marta Reinhardt - Portfolio & Catalog</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        darkBg: '#0d1117',
-                        cardBg: '#161b22',
-                        borderCol: '#30363d',
-                        accentBlue: '#58a6ff',
-                        accentPurple: '#8b5cf6',
-                        textMuted: '#8b949e',
-                        textMain: '#c9d1d9',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-                        mono: ['Fira Code', 'JetBrains Mono', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Google Fonts & Font Awesome Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <title>Marta Reinhardt - Portfolio</title>
     <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+            --card-bg: #161b22;
+            --active-color: #1f6feb;
+        }
+
         body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Glassmorphism Navigation */
-        .nav-glass {
-            background: rgba(13, 17, 23, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
+        /* Barra de Navegação e Idioma */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        ::-webkit-scrollbar-track {
-            background: #0d1117;
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #ffffff;
+            text-decoration: none;
+            border: 2px solid var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 6px;
         }
-        ::-webkit-scrollbar-thumb {
-            background: #30363d;
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 5px;
+        }
+
+        .lang-btn {
+            background-color: var(--card-bg);
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
             border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #58a6ff;
-        }
-
-        /* Catalog Card Hover Animation */
-        .catalog-card {
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .catalog-card:hover {
-            transform: translateY(-4px);
-            border-color: #58a6ff;
-            box-shadow: 0 10px 30px -10px rgba(88, 166, 255, 0.15);
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
         }
 
-        /* Active Language Pill */
         .lang-btn.active {
-            background-color: #58a6ff;
-            color: #0d1117;
-            font-weight: 700;
+            background-color: var(--active-color);
+            color: #ffffff;
+            border-color: var(--active-color);
         }
 
-        /* Filter Tab Active */
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            background: #8b5cf6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            background-color: var(--card-bg);
+            color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--border-color);
+        }
+
+        /* Seções */
+        section {
+            margin-bottom: 35px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        /* Filtros de Catálogo */
+        .filter-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background-color: var(--bg-color);
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
         .filter-btn.active {
-            border-color: #58a6ff;
-            color: #58a6ff;
-            background-color: rgba(88, 166, 255, 0.1);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
         }
 
-        /* Monogram Avatar Gradient Glowing Effect */
-        .logo-mr-avatar {
-            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
-            box-shadow: 0 0 25px rgba(139, 92, 246, 0.3);
+        /* Grades e Cartões */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
         }
 
-        .badge-tag {
-            font-family: 'Fira Code', monospace;
+        .card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            border-radius: 6px;
+            transition: transform 0.2s, display 0.2s;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        .tag {
+            display: inline-block;
             font-size: 0.75rem;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-top: 10px;
+            color: var(--accent-color);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        blockquote {
+            margin: 0;
+            padding: 15px 20px;
+            border-left: 4px solid var(--accent-color);
+            background-color: var(--bg-color);
+            font-style: italic;
+            color: #ffffff;
+            border-radius: 0 6px 6px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 8px;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-accentBlue selection:text-darkBg">
+<body>
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="fixed top-0 left-0 w-full z-50 nav-glass border-b border-borderCol">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            
-            <!-- Logo MR -->
-            <a href="#home" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-full logo-mr-avatar flex items-center justify-center text-white font-bold text-lg tracking-wider group-hover:scale-105 transition-transform duration-200">
-                    MR
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-white text-base leading-none group-hover:text-accentBlue transition-colors">Marta Reinhardt</span>
-                    <span class="text-xs text-textMuted font-mono mt-0.5" data-pt="Desenvolvedora & Pesquisadora" data-en="Developer & Researcher">Developer & Researcher</span>
-                </div>
-            </a>
-
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-                <a href="#home" class="hover:text-accentBlue transition-colors" data-pt="Home" data-en="Home">Home</a>
-                <a href="#about" class="hover:text-accentBlue transition-colors" data-pt="Sobre" data-en="About">About</a>
-                <a href="#projects" class="hover:text-accentBlue transition-colors" data-pt="Projetos" data-en="Projects">Projects</a>
-                <a href="#research" class="hover:text-accentBlue transition-colors" data-pt="Pesquisas" data-en="Research">Research</a>
-                <a href="#publications" class="hover:text-accentBlue transition-colors" data-pt="Publicações" data-en="Publications">Publications</a>
-                <a href="https://github.com/reinhardtmarta" target="_blank" class="hover:text-accentBlue transition-colors flex items-center gap-1">
-                    <i class="fa-brands fa-github text-base"></i> GitHub
-                </a>
-                <a href="#contact" class="hover:text-accentBlue transition-colors" data-pt="Contato" data-en="Contact">Contact</a>
-            </nav>
-
-            <!-- Language Switcher & Controls -->
-            <div class="flex items-center gap-3">
-                <div class="bg-cardBg border border-borderCol rounded-lg p-1 flex items-center gap-1 text-xs font-mono">
-                    <button id="lang-pt" onclick="switchLanguage('pt')" class="lang-btn px-2.5 py-1 rounded transition-all duration-200" title="Português">PT</button>
-                    <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn px-2.5 py-1 rounded transition-all duration-200 active" title="English">EN</button>
-                </div>
-
-                <!-- Mobile menu button -->
-                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 text-textMuted hover:text-white focus:outline-none">
-                    <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
-                </button>
-            </div>
+<div class="container">
+    <!-- Navegação -->
+    <nav>
+        <a href="#" class="logo">MR</a>
+        <ul class="nav-links">
+            <li><a href="#about" data-en="About" data-pt="Sobre">About</a></li>
+            <li><a href="#catalog" data-en="Catalog" data-pt="Catálogo">Catalog</a></li>
+            <li><a href="https://github.com/reinhardtmarta" target="_blank">GitHub</a></li>
+            <li><a href="#contact" data-en="Contact" data-pt="Contato">Contact</a></li>
+        </ul>
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" id="btn-pt" onclick="setLanguage('pt')">PT</button>
         </div>
+    </nav>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden border-b border-borderCol bg-cardBg px-4 pt-3 pb-6 space-y-3 text-sm">
-            <a href="#home" onclick="toggleMobileMenu()" class="block py-2 hover:text-accentBlue" data-pt="Home" data-en="Home">Home</a>
-            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 hover:text-accentBlue" data-pt="Sobre" data-en="About">About</a>
-            <a href="#projects" onclick="toggleMobileMenu()" class="block py-2 hover:text-accentBlue" data-pt="Projetos" data-en="Projects">Projects</a>
-            <a href="#research" onclick="toggleMobileMenu()" class="block py-2 hover:text-accentBlue" data-pt="Pesquisas" data-en="Research">Research</a>
-            <a href="#publications" onclick="toggleMobileMenu()" class="block py-2 hover:text-accentBlue" data-pt="Publicações" data-en="Publications">Publications</a>
-            <a href="https://github.com/reinhardtmarta" target="_blank" class="block py-2 hover:text-accentBlue flex items-center gap-2">
-                <i class="fa-brands fa-github"></i> GitHub
-            </a>
-            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 hover:text-accentBlue" data-pt="Contato" data-en="Contact">Contact</a>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="avatar">MR</div>
+        <h1>Marta Reinhardt</h1>
+        <p class="subtitle" 
+           data-en="Software Developer focused on reliable, secure, and practical solutions. Studying Cybersecurity, Data Engineering, and Artificial Intelligence."
+           data-pt="Desenvolvedora de Software focada em soluções confiáveis, seguras e práticas. Estudando Cibersegurança, Engenharia de Dados e Inteligência Artificial.">
+           Software Developer focused on reliable, secure, and practical solutions. Studying Cybersecurity, Data Engineering, and Artificial Intelligence.
+        </p>
+        <div class="cta-buttons">
+            <a href="#catalog" class="btn" data-en="View Work" data-pt="Ver Trabalhos">View Work</a>
+            <a href="https://github.com/reinhardtmarta" class="btn" target="_blank">GitHub</a>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 space-y-24 w-full">
+    <!-- Sobre -->
+    <section id="about">
+        <h2 data-en="About Me" data-pt="Sobre Mim">About Me</h2>
+        <p data-en="I enjoy understanding how systems work before trying to improve them. My approach combines software development, security, automation, and continuous learning."
+           data-pt="Gosto de entender como os sistemas funcionam antes de tentar melhorá-los. Minha abordagem combina desenvolvimento de software, segurança, automação e aprendizado contínuo.">
+           I enjoy understanding how systems work before trying to improve them. My approach combines software development, security, automation, and continuous learning.
+        </p>
+    </section>
 
-        <!-- HOME / HERO SECTION -->
-        <section id="home" class="scroll-mt-28 flex flex-col items-center text-center py-8 sm:py-12">
-            
-            <!-- Avatar MR Circle -->
-            <div class="relative mb-6">
-                <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full logo-mr-avatar flex items-center justify-center text-white font-extrabold text-4xl sm:text-5xl tracking-wider">
-                    MR
-                </div>
-                <div class="absolute -bottom-2 -right-2 bg-cardBg border border-borderCol text-accentBlue px-3 py-1 rounded-full text-xs font-mono flex items-center gap-1.5 shadow-lg">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span data-pt="Ativa" data-en="Available">Available</span>
-                </div>
+    <!-- Catálogo -->
+    <section id="catalog">
+        <h2 data-en="Catalog (Projects, Research & Publications)" data-pt="Catálogo (Projetos, Pesquisa e Publicações)">Catalog (Projects, Research & Publications)</h2>
+        
+        <!-- Botões de Filtro usando data-filter -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all" data-en="All" data-pt="Todos">All</button>
+            <button class="filter-btn" data-filter="project" data-en="Projects" data-pt="Projetos">Projects</button>
+            <button class="filter-btn" data-filter="research" data-en="Research" data-pt="Pesquisa">Research</button>
+            <button class="filter-btn" data-filter="publication" data-en="Publications" data-pt="Publicações">Publications</button>
+        </div>
+
+        <!-- Grade do Catálogo -->
+        <div class="grid">
+            <div class="card catalog-item" data-type="project">
+                <h3>CFAM</h3>
+                <p data-en="Deterministic filtering layer for AI systems." data-pt="Camada de filtragem determinística para sistemas de IA.">
+                   Deterministic filtering layer for AI systems.
+                </p>
+                <span class="tag" data-en="Project" data-pt="Projeto">Project</span>
             </div>
 
-            <!-- Title & Subtitle -->
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
-                Marta Reinhardt
-            </h1>
-            <p class="text-lg sm:text-xl text-textMuted max-w-2xl font-light mb-8 leading-relaxed" 
-               data-pt="Desenvolvedora de Software focada em criar soluções confiáveis, seguras e práticas. Atualmente estudando Cibersegurança, Engenharia de Dados e Inteligência Artificial por meio de projetos práticos."
-               data-en="Software Developer focused on building reliable, secure, and practical solutions. Currently studying Cybersecurity, Data Engineering, and Artificial Intelligence through hands-on projects.">
-                Software Developer focused on building reliable, secure, and practical solutions. Currently studying Cybersecurity, Data Engineering, and Artificial Intelligence through hands-on projects.
-            </p>
-
-            <!-- Call to Action Buttons -->
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#projects" class="bg-accentBlue text-darkBg hover:bg-blue-400 font-semibold px-6 py-3 rounded-lg transition-all flex items-center gap-2 shadow-md">
-                    <i class="fa-solid fa-folder-open"></i>
-                    <span data-pt="Ver Projetos" data-en="View Projects">View Projects</span>
-                </a>
-                <a href="#research" class="bg-cardBg hover:bg-borderCol border border-borderCol text-white font-medium px-6 py-3 rounded-lg transition-all flex items-center gap-2">
-                    <i class="fa-solid fa-flask"></i>
-                    <span data-pt="Explorar Pesquisas" data-en="Explore Research">Explore Research</span>
-                </a>
-                <a href="https://github.com/reinhardtmarta" target="_blank" class="bg-cardBg hover:bg-borderCol border border-borderCol text-textMain hover:text-white font-medium px-6 py-3 rounded-lg transition-all flex items-center gap-2">
-                    <i class="fa-brands fa-github text-lg"></i>
-                    <span>GitHub</span>
-                </a>
+            <div class="card catalog-item" data-type="project">
+                <h3>LogiFlow</h3>
+                <p data-en="Food rescue and logistics platform." data-pt="Plataforma de resgate e logística de alimentos.">
+                   Food rescue and logistics platform.
+                </p>
+                <span class="tag" data-en="Project" data-pt="Projeto">Project</span>
             </div>
 
-            <!-- Focus Badges -->
-            <div class="mt-12 flex flex-wrap justify-center gap-2 max-w-3xl">
-                <span class="badge-tag bg-cardBg border border-borderCol px-3 py-1.5 rounded-md text-textMuted flex items-center gap-1.5">
-                    <i class="fa-solid fa-shield-halved text-accentBlue"></i> Cybersecurity
-                </span>
-                <span class="badge-tag bg-cardBg border border-borderCol px-3 py-1.5 rounded-md text-textMuted flex items-center gap-1.5">
-                    <i class="fa-solid fa-database text-accentPurple"></i> Data Engineering
-                </span>
-                <span class="badge-tag bg-cardBg border border-borderCol px-3 py-1.5 rounded-md text-textMuted flex items-center gap-1.5">
-                    <i class="fa-solid fa-robot text-emerald-400"></i> Artificial Intelligence
-                </span>
-                <span class="badge-tag bg-cardBg border border-borderCol px-3 py-1.5 rounded-md text-textMuted flex items-center gap-1.5">
-                    <i class="fa-solid fa-code text-amber-400"></i> Software Architecture
-                </span>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="scroll-mt-28">
-            <div class="border-b border-borderCol pb-4 mb-8 flex items-center justify-between">
-                <h2 class="text-2xl font-bold text-white flex items-center gap-3">
-                    <i class="fa-solid fa-user text-accentBlue"></i>
-                    <span data-pt="Sobre Mim" data-en="About Me">About Me</span>
-                </h2>
-                <span class="text-xs font-mono text-textMuted">// catalog.about</span>
+            <div class="card catalog-item" data-type="research">
+                <h3>SCAA Architecture</h3>
+                <p data-en="Architecture experiments focused on efficiency and automation." data-pt="Experimentos de arquitetura focados em eficiência e automação.">
+                   Architecture experiments focused on efficiency and automation.
+                </p>
+                <span class="tag" data-en="Research" data-pt="Pesquisa">Research</span>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Bio Card -->
-                <div class="md:col-span-2 bg-cardBg border border-borderCol rounded-xl p-6 space-y-4">
-                    <p class="text-textMain leading-relaxed"
-                       data-pt="Gosto de entender como os sistemas funcionam em profundidade antes de buscar aprimorá-los. Minha abordagem combina desenvolvimento de software moderno, segurança defensiva, automação e aprendizado contínuo."
-                       data-en="I enjoy understanding how systems work in depth before trying to improve them. My approach combines modern software development, defensive security, automation, and continuous learning.">
-                        I enjoy understanding how systems work in depth before trying to improve them. My approach combines modern software development, defensive security, automation, and continuous learning.
-                    </p>
-                    <p class="text-textMain leading-relaxed"
-                       data-pt="Acredito firmemente que a tecnologia deve ser confiável, de fácil manutenção e projetada para resolver problemas do mundo real de forma direta e eficiente."
-                       data-en="I firmly believe technology should be reliable, maintainable, and built to solve real-world problems directly and efficiently.">
-                        I firmly believe technology should be reliable, maintainable, and built to solve real-world problems directly and efficiently.
-                    </p>
-                    
-                    <div class="pt-4 border-t border-borderCol grid sm:grid-cols-2 gap-4">
-                        <div>
-                            <h4 class="text-xs font-mono text-textMuted uppercase tracking-wider mb-2" data-pt="Linguagens & Tecnologias" data-en="Languages & Tech">Languages & Tech</h4>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="bg-darkBg border border-borderCol text-xs font-mono px-2 py-1 rounded text-accentBlue">Python</span>
-                                <span class="bg-darkBg border border-borderCol text-xs font-mono px-2 py-1 rounded text-accentBlue">Flutter / Dart</span>
-                                <span class="bg-darkBg border border-borderCol text-xs font-mono px-2 py-1 rounded text-accentBlue">SQL / Postgres</span>
-                                <span class="bg-darkBg border border-borderCol text-xs font-mono px-2 py-1 rounded text-accentBlue">HTML5 / CSS3 / JS</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-mono text-textMuted uppercase tracking-wider mb-2" data-pt="Domínios de Estudo" data-en="Domains of Focus">Domains of Focus</h4>
-                            <div class="flex flex-wrap gap-1.5">
-                                <span class="bg-darkBg border border-borderCol text-xs font-mono px-2 py-1 rounded text-accentPurple">Cybersecurity</span>
-                                <span class="bg-darkBg border border-borderCol text-xs font-mono px-2 py-1 rounded text-accentPurple">AI Systems</span>
-                                <span class="bg-darkBg border border-borderCol text-xs font-mono px-2 py-1 rounded text-accentPurple">Data Engineering</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Learning & Status Sidebar -->
-                <div class="bg-cardBg border border-borderCol rounded-xl p-6 space-y-4 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-white font-bold text-base mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-graduation-cap text-accentBlue"></i>
-                            <span data-pt="Em Aprendizado" data-en="Current Studies">Current Studies</span>
-                        </h3>
-                        <ul class="space-y-2.5 text-xs font-mono text-textMuted">
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
-                                <span>Google Cybersecurity Certificate</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
-                                <span>Advanced SQL & Data Modeling</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
-                                <span>Data Pipelines & Engineering</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
-                                <span>Deterministic AI Workflows</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
-                                <span>Secure Software Architecture</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-darkBg border border-borderCol rounded-lg p-3 text-xs">
-                        <div class="text-accentBlue font-mono font-semibold mb-1" data-pt="Status Acadêmico/Profissional" data-en="Academic & Career Status">Academic & Career Status</div>
-                        <p class="text-textMuted" data-pt="Aprofundando conhecimentos práticos e desenvolvendo arquiteturas orientadas a soluções." data-en="Deepening practical capabilities and building solution-oriented software architectures.">
-                            Deepening practical capabilities and building solution-oriented software architectures.
-                        </p>
-                    </div>
-                </div>
+            <div class="card catalog-item" data-type="publication">
+                <h3>Secure AI Workflows</h3>
+                <p data-en="Technical documentation on deterministic AI pipelines." data-pt="Documentação técnica sobre fluxos determinísticos em IA.">
+                   Technical documentation on deterministic AI pipelines.
+                </p>
+                <span class="tag" data-en="Publication" data-pt="Publicação">Publication</span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- PROJECTS SECTION (Cataloged & Searchable) -->
-        <section id="projects" class="scroll-mt-28">
-            <div class="border-b border-borderCol pb-4 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div>
-                    <h2 class="text-2xl font-bold text-white flex items-center gap-3">
-                        <i class="fa-solid fa-diagram-project text-accentBlue"></i>
-                        <span data-pt="Catálogo de Projetos" data-en="Projects Catalog">Projects Catalog</span>
-                    </h2>
-                    <p class="text-xs text-textMuted font-mono mt-1" data-pt="Sistemas, aplicações e protótipos em desenvolvimento" data-en="Systems, applications and working prototypes">Systems, applications and working prototypes</p>
-                </div>
+    <!-- Estudos e Certificações -->
+    <section>
+        <h2 data-en="Current Focus & Studies" data-pt="Foco Atual e Estudos">Current Focus & Studies</h2>
+        <ul>
+            <li>Google Cybersecurity Professional Certificate</li>
+            <li>SQL & Data Engineering</li>
+            <li>Artificial Intelligence Systems</li>
+            <li>Secure Software Development</li>
+        </ul>
+    </section>
 
-                <!-- Project Filters -->
-                <div class="flex items-center gap-2 flex-wrap">
-                    <button onclick="filterProjects('all')" class="filter-btn active border border-borderCol text-textMuted px-3 py-1 rounded-md text-xs font-mono transition-all" data-filte
+    <!-- Filosofia -->
+    <section>
+        <h2 data-en="Philosophy" data-pt="Filosofia">Philosophy</h2>
+        <blockquote data-en='"Technology is most valuable when it helps protect people, strengthen systems and solve meaningful problems."'
+                    data-pt='"A tecnologia é mais valiosa quando ajuda a proteger pessoas, fortalecer sistemas e resolver problemas reais."'>
+            "Technology is most valuable when it helps protect people, strengthen systems and solve meaningful problems."
+        </blockquote>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contact">
+        <p>
+            <a href="https://github.com/reinhardtmarta" target="_blank">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/martareinhardt/" target="_blank">LinkedIn</a> | 
+            <a href="mailto:martareinhardt@proton.me">Email</a>
+        </p>
+        <p>&copy; 2026 Marta Reinhardt</p>
+    </footer>
+</div>
+
+<!-- JavaScript para Interatividade (Otimizado para GitHub Pages) -->
+<script>
+    // Função de Troca de Idioma
+    function setLanguage(lang) {
+        const elements = document.querySelectorAll('[data-pt][data-en]');
+        elements.forEach(el => {
+            el.textContent = (lang === 'pt') ? el.getAttribute('data-pt') : el.getAttribute('data-en');
+        });
+
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
+    }
+
+    // Event Listeners (escutadores de eventos) para garantir que o filtro funcione no GitHub
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.catalog-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Remove classe ativa de todos
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Adiciona classe ativa no botão clicado
+                e.currentTarget.classList.add('active');
+
+                // Obtém o tipo de filtro
+                const filterType = e.currentTarget.getAttribute('data-filter');
+
+                // Exibe ou oculta os itens do catálogo
+                items.forEach(item => {
+                    if (filterType === 'all' || item.getAttribute('data-type') === filterType) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
