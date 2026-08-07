@@ -15,6 +15,10 @@
             --active-color: #1f6feb;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
@@ -30,7 +34,7 @@
             padding: 20px;
         }
 
-        /* Barra de Navegação e Idioma */
+        /* Barra de Navegação */
         nav {
             display: flex;
             justify-content: space-between;
@@ -50,6 +54,11 @@
             border: 2px solid var(--accent-color);
             padding: 4px 10px;
             border-radius: 6px;
+            transition: transform 0.2s;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
         }
 
         .nav-links {
@@ -80,11 +89,17 @@
             background-color: var(--card-bg);
             color: var(--text-muted);
             border: 1px solid var(--border-color);
-            padding: 4px 10px;
+            padding: 6px 12px;
             border-radius: 4px;
             cursor: pointer;
             font-size: 0.85rem;
             font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--text-muted);
+            color: #ffffff;
         }
 
         .lang-btn.active {
@@ -141,11 +156,13 @@
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            transition: background-color 0.2s;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.2s;
         }
 
         .btn:hover {
             background-color: var(--border-color);
+            transform: translateY(-2px);
         }
 
         /* Seções */
@@ -177,18 +194,25 @@
             background-color: var(--bg-color);
             color: var(--text-muted);
             border: 1px solid var(--border-color);
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
             cursor: pointer;
             font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            color: #ffffff;
+            border-color: var(--text-muted);
         }
 
         .filter-btn.active {
             border-color: var(--accent-color);
             color: var(--accent-color);
+            background-color: rgba(88, 166, 255, 0.1);
         }
 
-        /* Grades e Cartões */
+        /* Grade e Cartões */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -200,7 +224,12 @@
             border: 1px solid var(--border-color);
             padding: 18px;
             border-radius: 6px;
-            transition: transform 0.2s, display 0.2s;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--text-muted);
         }
 
         .card h3 {
@@ -259,12 +288,15 @@
             text-decoration: none;
             margin: 0 8px;
         }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Navegação -->
     <nav>
         <a href="#" class="logo">MR</a>
         <ul class="nav-links">
@@ -274,12 +306,11 @@
             <li><a href="#contact" data-en="Contact" data-pt="Contato">Contact</a></li>
         </ul>
         <div class="lang-switch">
-            <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">EN</button>
-            <button class="lang-btn" id="btn-pt" onclick="setLanguage('pt')">PT</button>
+            <button class="lang-btn active" id="btn-en" data-lang="en">EN</button>
+            <button class="lang-btn" id="btn-pt" data-lang="pt">PT</button>
         </div>
     </nav>
 
-    <!-- Cabeçalho -->
     <header>
         <div class="avatar">MR</div>
         <h1>Marta Reinhardt</h1>
@@ -294,7 +325,6 @@
         </div>
     </header>
 
-    <!-- Sobre -->
     <section id="about">
         <h2 data-en="About Me" data-pt="Sobre Mim">About Me</h2>
         <p data-en="I enjoy understanding how systems work before trying to improve them. My approach combines software development, security, automation, and continuous learning."
@@ -303,11 +333,9 @@
         </p>
     </section>
 
-    <!-- Catálogo -->
     <section id="catalog">
         <h2 data-en="Catalog (Projects, Research & Publications)" data-pt="Catálogo (Projetos, Pesquisa e Publicações)">Catalog (Projects, Research & Publications)</h2>
         
-        <!-- Botões de Filtro usando data-filter -->
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all" data-en="All" data-pt="Todos">All</button>
             <button class="filter-btn" data-filter="project" data-en="Projects" data-pt="Projetos">Projects</button>
@@ -315,7 +343,6 @@
             <button class="filter-btn" data-filter="publication" data-en="Publications" data-pt="Publicações">Publications</button>
         </div>
 
-        <!-- Grade do Catálogo -->
         <div class="grid">
             <div class="card catalog-item" data-type="project">
                 <h3>CFAM</h3>
@@ -351,7 +378,6 @@
         </div>
     </section>
 
-    <!-- Estudos e Certificações -->
     <section>
         <h2 data-en="Current Focus & Studies" data-pt="Foco Atual e Estudos">Current Focus & Studies</h2>
         <ul>
@@ -362,7 +388,6 @@
         </ul>
     </section>
 
-    <!-- Filosofia -->
     <section>
         <h2 data-en="Philosophy" data-pt="Filosofia">Philosophy</h2>
         <blockquote data-en='"Technology is most valuable when it helps protect people, strengthen systems and solve meaningful problems."'
@@ -371,7 +396,6 @@
         </blockquote>
     </section>
 
-    <!-- Rodapé -->
     <footer id="contact">
         <p>
             <a href="https://github.com/reinhardtmarta" target="_blank">GitHub</a> | 
@@ -382,38 +406,48 @@
     </footer>
 </div>
 
-<!-- JavaScript para Interatividade (Otimizado para GitHub Pages) -->
 <script>
-    // Função de Troca de Idioma
-    function setLanguage(lang) {
-        const elements = document.querySelectorAll('[data-pt][data-en]');
-        elements.forEach(el => {
-            el.textContent = (lang === 'pt') ? el.getAttribute('data-pt') : el.getAttribute('data-en');
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // --- GERENCIAMENTO DE IDIOMA ---
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const translatableElements = document.querySelectorAll('[data-pt][data-en]');
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const selectedLang = e.target.getAttribute('data-lang');
+
+                // Atualiza classes dos botões
+                langButtons.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Altera os textos com base nos atributos de dados
+                translatableElements.forEach(el => {
+                    if (selectedLang === 'pt') {
+                        el.textContent = el.getAttribute('data-pt');
+                    } else {
+                        el.textContent = el.getAttribute('data-en');
+                    }
+                });
+            });
         });
 
-        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-        document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
-    }
-
-    // Event Listeners (escutadores de eventos) para garantir que o filtro funcione no GitHub
-    document.addEventListener('DOMContentLoaded', () => {
+        // --- FILTRO DO CATÁLOGO ---
         const filterButtons = document.querySelectorAll('.filter-btn');
-        const items = document.querySelectorAll('.catalog-item');
+        const catalogItems = document.querySelectorAll('.catalog-item');
 
-        filterButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                // Remove classe ativa de todos
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                
-                // Adiciona classe ativa no botão clicado
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Atualiza classes dos botões de filtro
+                filterButtons.forEach(b => b.classList.remove('active'));
                 e.currentTarget.classList.add('active');
 
-                // Obtém o tipo de filtro
-                const filterType = e.currentTarget.getAttribute('data-filter');
+                const filterValue = e.currentTarget.getAttribute('data-filter');
 
-                // Exibe ou oculta os itens do catálogo
-                items.forEach(item => {
-                    if (filterType === 'all' || item.getAttribute('data-type') === filterType) {
+                // Lógica de exibição com transição limpa
+                catalogItems.forEach(item => {
+                    const itemType = item.getAttribute('data-type');
+                    if (filterValue === 'all' || itemType === filterValue) {
                         item.style.display = 'block';
                     } else {
                         item.style.display = 'none';
