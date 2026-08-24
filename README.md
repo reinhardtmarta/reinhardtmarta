@@ -1,78 +1,56 @@
+<div align="center">
+
 [English](README.en.md) | **Português**
 
+# Marta Reinhardt
+### MVP & Software Developer
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open%20Source-16A34A?style=for-the-badge&logo=open-source-initiative&logoColor=white" />
+</p>
+
+🔗 [Acesse meu Portfólio](https://reinhardtmarta.github.io/reinhardtmarta/)
+
 </div>
+
+---
+
+### 🌱 Sobre Mim
+
+Desenvolvedora autodidata focada em prototipagem rápida e construção de MVPs (Produtos Mínimos Viáveis). Estruturo a lógica de sistemas, modelo bancos de dados e integro ferramentas de IA para acelerar a entrega de aplicações funcionais de ponta a ponta.
+
+* **Foco Técnico:** Prototipagem Ágil, Arquitetura de Software e Fluxo de Dados Determinístico.
+* **Stack Principal:** Python, Flutter (Dart), SQL, Git.
+
+---
+
+### 🚀 Principais Projetos
+
+| Projeto | Descrição / Objetivo | Tecnologias |
+| :--- | :--- | :--- |
+| **[LogiFlow](link-do-repositorio)** | Plataforma mobile/web voltada para otimização logística e redução de desperdício de alimentos. | Flutter, Dart, Supabase |
+| **[CFAM](link-do-repositorio)** | Ferramenta determinística de linha de comando para filtragem e confiabilidade em fluxos de IA. | Python, CLI |
+| **[SCAA](link-do-repositorio)** | Protótipo experimental focado em automação lógica e eficiência computacional. | Python, Automação |
+
+---
+
+### 🛠️ Tecnologias & Ferramentas
+
+* **Linguagens & Frameworks:** Python, Dart, Flutter.
+* **Dados & Backend:** SQL (PostgreSQL, SQLite), Supabase, Firebase.
+* **Ambiente & Controle:** Git, GitHub, Linux.
+
+---
+
+### 🎯 Objetivo
+
+Construir aplicações funcionais, atuar em desenvolvimento de MVPs e colaborar em projetos de software orientados a dados e automação.
+
+---
+
 <div align="center">
--
-
-https://reinhardtmarta.github.io/reinhardtmarta/
-
-<img src="https://img.shields.io/badge/DATA%20de%20Software-4F46E5?style=for-the-badge" />
-<img src="https://img.shields.io/badge/SYSTEMS ENGENNIERING-7C3AED?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Artificial%20Inteligence-16A34A?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Open%20Source-16A34A?style=for-the-badge" />
-
-
-</div>---
-
-🌱 Sobre mim
-
-MVP & Software Developer
-
-Meu foco atual é engenharia de sistemas aplicada a dados e IA. Estou usando Dados e IA como campo de especialização, enquanto construo minha base de engenharia de software.”
-Tenho interesse em:
-
-- Arquitetura de Software
-- Desenvolvimento Seguro
-- Cibersegurança
-- Engenharia de Dados
-- Inteligência Artificial
-- Automação
-- Engenharia de sistemas 
-- Open Source
-
----
-
-🚀 Projetos
-
-Projeto| Objetivo
-LogiFlow| Plataforma voltada para otimização logística e redução de desperdícios.
-CFAM| Experimentos com arquitetura para aumentar a confiabilidade de sistemas de IA.
-SCAA| Estudos sobre automação, organização estrutural e eficiência computacional.
-
----
-
-📚 Atualmente estudando
-
-- Google Cybersecurity Certificate
-- SQL
-- Engenharia de Dados
-- Desenvolvimento Seguro
-- Inteligência Artificial
-- Arquitetura de Sistemas
-
----
-
-🛠️ Tecnologias
-
-Aprendendo 
-
-- Flutter
-- Dart
-- Python
-- SQL
-- Git
-- GitHub
-- Linux
-  
-
----
-
-🎯 Objetivo
-
-Aprender, contribuir para projetos de impacto e construir soluções que unam tecnologia, segurança e eficiência.
-
----
-
-<div align="center">"Aprender continuamente é a melhor forma de construir soluções melhores."
-
+  <sub>"Construindo soluções funcionais através de prototipagem ágil e código estruturado."</sub>
 </div>
