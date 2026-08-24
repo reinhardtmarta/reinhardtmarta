@@ -1,43 +1,57 @@
 <div align="center">
 
-[🇧🇷 Português](README.md) | 🇺🇸 **English**
+[🇧🇷 Português](README.md) | **English 🇺🇸**
+
+# Marta Reinhardt
+### MVP & Software Developer
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open%20Source-16A34A?style=for-the-badge&logo=open-source-initiative&logoColor=white" />
+</p>
+
+🔗 [Access My Portfolio](https://reinhardtmarta.github.io/reinhardtmarta/)
 
 </div>
-<div align="center">
 
-<img src="https://img.shields.io/badge/Systems devoloper%20-%E2%9A%A1%20Problem%20Solving-9B59B6?style=for-the-badge" alt="Architecture"/>  
-<img src="https://img.shields.io/badge/Tech%20Agnostic-%F0%9F%94%A7%20Solutions-8E44AD?style=for-the-badge" alt="Solutions"/>  
-<img src="https://img.shields.io/badge/Brazilian-%F0%9F%87%A7%F0%9F%87%B7%20OpenSource-E74C3C?style=for-the-badge" alt="Brazilian"/>
+---
 
-✨ *Software developer and systems architect focused on macro efficiency. Driven by structural logic, automation, and building ethical, resilient technology.* ✨
+### 🌱 About Me
 
-</div>
+Self-taught software developer focused on rapid prototyping and building functional MVPs (Minimum Viable Products). I design system architectures, structure relational databases, and integrate AI tools to deliver end-to-end applications.
 
-## 🌺 About Me
-I'm a Brazilian software developer deeply immersed in **systems architecture**, **resilient computing**, and **practical automation**. My work focuses on looking at the big picture to translate complex operational challenges into optimized, clean, and sustainable code solutions.
+* **Core Focus:** Rapid Prototyping, Systems Architecture, and Deterministic Data Flow.
+* **Primary Stack:** Python, Flutter (Dart), SQL, Git.
 
-- 🔭 Currently exploring: Resilient backend patterns, system optimization, and automation workflows  
-- 🌱 Always growing: Software architecture patterns and high-level logic  
-- 💜 Values: Structural efficiency, ethics, resilience, and open-source collaboration  
-- 📫 Reach me: Right here on GitHub!
+---
 
-## 📂 Public Solutions & Repositories
+### 📂 Public Projects & Repositories
 
-| Repository | The Challenge | The Developed Solution |
-| :--- | :--- | :--- |
-| [**SCAA**](https://github.com/reinhardtmarta/scaa) | All components run at full cost regardless of what the task requires | Structural architecture and automation experiments.|
-| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Logistic and waste | Logic-oriented workflows and resilient processing patterns. |
-| [**CFAM**](https://github.com/reinhardtmarta/cfam)| AI vulnerabilities | Deterministic context filtering for AI systems |reducing inconsistency and improving decision reliability.|
-<br>
+| Repository | The Problem | The Solution | Technologies |
+| :--- | :--- | :--- | :--- |
+| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Inefficient logistics and commercial food waste. | Mobile/Web platform for optimized supply routing and inventory redistribution. | Flutter, Dart, Supabase |
+| [**CFAM**](https://github.com/reinhardtmarta/cfam) | Context leaks and non-deterministic behavior in AI pipelines. | CLI tool for deterministic prompt filtering and execution reliability. | Python, CLI |
+| [**SCAA**](https://github.com/reinhardtmarta/scaa) | High operational overhead in static computing tasks. | Architecture experiments for workflow automation and computational efficiency. | Python, Automation |
+
+---
+
+### 🛠️ Tech Stack & Tools
+
+* **Languages & Frameworks:** Python, Dart, Flutter.
+* **Data & Backend:** SQL (PostgreSQL, SQLite), Supabase, Firebase.
+* **Environment & Tools:** Git, GitHub, Linux, AI-Assisted Workflows.
+
+---
 
 <div align="center">
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=reinhardtmarta&theme=transparent" alt="GitHub Activity"/>
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=reinhardtmarta&theme=transparent" alt="Stats"/>
 
+<br><br>
+
+<sub>"Building functional, testable software through structured architecture and rapid prototyping."</sub>
+
 </div>
-<div align="center">
-
-
-> *"As long as real problems exist in complex systems, there must be people who at least try to solve them."*
-
