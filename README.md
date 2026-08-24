@@ -17,7 +17,7 @@ https://reinhardtmarta.github.io/reinhardtmarta/
 🌱 Sobre mim
 
 Meu foco atual é engenharia de sistemas aplicada a dados e IA. Estou usando Dados e IA como campo de especialização, enquanto construo minha base de engenharia de software.”
-
+MVP & Software Developer
 Tenho interesse em:
 
 - Arquitetura de Software
