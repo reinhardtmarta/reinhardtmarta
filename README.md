@@ -31,8 +31,8 @@ Desenvolvedora autodidata focada em prototipagem rápida e construção de MVPs 
 
 | Projeto | Descrição / Objetivo | Tecnologias |
 | :--- | :--- | :--- |
-| **[LogiFlow](https://github.com/reinhardtmarta/LogiFlow)** | Plataforma mobile/web voltada para otimização logística e redução de desperdício de alimentos. | Flutter, Dart, Supabase |
-| **[CFAM](https://github.com/reinhardtmarta/CFAM)** | Ferramenta determinística de linha de comando para filtragem e confiabilidade em fluxos de IA. | Python, CLI |
+| **[LogiFlow](https://github.com/reinhardtmarta/LogiFlow)** | Plataforma mobile/web voltada para otimização logística e redução de desperdício de alimentos. | TS,firebase |
+| **[CFAM](https://github.com/reinhardtmarta/CFAM)** | Ferramenta determinística de linha de comando para filtragem e confiabilidade em fluxos de IA. | rust ,cli |
 | **[SCAA](https://github.com/reinhardtmarta/SCAA)** | Protótipo experimental focado em automação lógica e eficiência computacional. | Python, Automação |
 
 ---
