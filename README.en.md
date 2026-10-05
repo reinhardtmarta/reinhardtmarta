@@ -31,8 +31,8 @@ Self-taught software developer focused on rapid prototyping and building functio
 
 | Repository | The Problem | The Solution | Technologies |
 | :--- | :--- | :--- | :--- |
-| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Inefficient logistics and commercial food waste. | Mobile/Web platform for optimized supply routing and inventory redistribution. | Flutter, Dart, Supabase |
-| [**CFAM**](https://github.com/reinhardtmarta/cfam) | Context leaks and non-deterministic behavior in AI pipelines. | CLI tool for deterministic prompt filtering and execution reliability. | Python, CLI |
+| [**LogiFlow**](https://github.com/reinhardtmarta/logiflow) | Inefficient logistics and commercial food waste. | Mobile/Web platform for optimized supply routing and inventory redistribution. | Typescript , firebase|
+| [**CFAM**](https://github.com/reinhardtmarta/cfam) | Context leaks and non-deterministic behavior in AI pipelines. | CLI tool for deterministic prompt filtering and execution reliability. | Rust, CLI |
 | [**SCAA**](https://github.com/reinhardtmarta/scaa) | High operational overhead in static computing tasks. | Architecture experiments for workflow automation and computational efficiency. | Python, Automation |
 
 ---
