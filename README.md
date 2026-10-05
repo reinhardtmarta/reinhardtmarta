@@ -39,8 +39,8 @@ Desenvolvedora autodidata focada em prototipagem rápida e construção de MVPs 
 
 ### 🛠️ Tecnologias & Ferramentas
 
-* **Linguagens & Frameworks:** Python, Dart, Flutter.
-* **Dados & Backend:** SQL (PostgreSQL, SQLite), Supabase, Firebase.
+* **Linguagens & Frameworks:** Python, Typescript.
+* **Dados & Backend:** SQL (PostgreSQL, SQLite), Firebase.
 * **Ambiente & Controle:** Git, GitHub, Linux.
 
 ---
