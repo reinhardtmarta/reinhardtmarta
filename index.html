@@ -138,7 +138,7 @@
         .subtitle {
             color: var(--text-muted);
             font-size: 1.05rem;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 20px auto;
         }
 
@@ -315,9 +315,9 @@
         <div class="avatar">MR</div>
         <h1>Marta Reinhardt</h1>
         <p class="subtitle" 
-           data-en="MVP & Software Developer focused on rapid prototyping and building functional, end-to-end applications."
-           data-pt="Desenvolvedora de Software & MVPs focada em prototipagem rápida e construção de aplicações funcionais de ponta a ponta.">
-           MVP & Software Developer focused on rapid prototyping and building functional, end-to-end applications.
+           data-en="Systems Analysis & Development Student | Building & Testing Software Solutions"
+           data-pt="Estudante de Análise e Desenvolvimento de Sistemas | Desenvolvendo e Testando Soluções de Software">
+           Systems Analysis & Development Student | Building & Testing Software Solutions
         </p>
         <div class="cta-buttons">
             <a href="#catalog" class="btn" data-en="View Work" data-pt="Ver Trabalhos">View Work</a>
@@ -327,64 +327,72 @@
 
     <section id="about">
         <h2 data-en="About Me" data-pt="Sobre Mim">About Me</h2>
-        <p data-en="I build functional MVPs and software solutions. I design system architectures, structure relational databases, and integrate AI tools to transform practical problems into testable applications."
-           data-pt="Construo MVPs funcionais e soluções de software de ponta a ponta. Estruturo arquiteturas de sistemas, modelo bancos de dados relacionais e integro ferramentas de IA para transformar problemas reais em aplicações testáveis.">
-           I build functional MVPs and software solutions. I design system architectures, structure relational databases, and integrate AI tools to transform practical problems into testable applications.
+        <p data-en="I am an Systems Analysis and Development student focused on hands-on practice, system logic, and software prototyping. Certified in Google IT Support, I enjoy building tools, testing real code, and resolving technical problems through structured experimentation."
+           data-pt="Sou estudante de Análise e Desenvolvimento de Sistemas focada em prática real, lógica de sistemas e prototipagem de software. Possuo a certificação Google IT Support e gosto de construir ferramentas, testar código real e resolver problemas técnicos com experimentação estruturada.">
+           I am an Systems Analysis and Development student focused on hands-on practice, system logic, and software prototyping. Certified in Google IT Support, I enjoy building tools, testing real code, and resolving technical problems through structured experimentation.
         </p>
     </section>
 
     <section id="catalog">
-        <h2 data-en="Catalog & Portfolio" data-pt="Catálogo & Portfólio">Catalog & Portfolio</h2>
+        <h2 data-en="Catalog & Projects" data-pt="Catálogo & Projetos">Catalog & Projects</h2>
         
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all" data-en="All" data-pt="Todos">All</button>
-            <button class="filter-btn" data-filter="mvp" data-en="MVPs" data-pt="MVPs">MVPs</button>
-            <button class="filter-btn" data-filter="tool" data-en="Tools" data-pt="Ferramentas">Tools</button>
-            <button class="filter-btn" data-filter="prototype" data-en="Prototypes" data-pt="Protótipos">Prototypes</button>
+            <button class="filter-btn" data-filter="web" data-en="Web & MVPs" data-pt="Web & MVPs">Web & MVPs</button>
+            <button class="filter-btn" data-filter="tool" data-en="CLI & AI Tools" data-pt="CLI & Ferramentas">CLI & Ferramentas</button>
+            <button class="filter-btn" data-filter="lowlevel" data-en="Low-Level & Experimental" data-pt="Baixo Nível & Experimentos">Baixo Nível & Experimentos</button>
         </div>
 
         <div class="grid">
+            <div class="card catalog-item" data-type="web">
+                <h3><a href="https://github.com/reinhardtmarta/logiflow" target="_blank" style="color: inherit; text-decoration: none;">LogiFlow</a></h3>
+                <p data-en="Food rescue and inventory marketplace built with React, TypeScript, and Google Gemma 4 AI." data-pt="Marketplace de resgate e estoque de alimentos construído com React, TypeScript e IA Google Gemma 4.">
+                   Food rescue and inventory marketplace built with React, TypeScript, and Google Gemma 4 AI.
+                </p>
+                <span class="tag">TypeScript / React / AI</span>
+            </div>
+
             <div class="card catalog-item" data-type="tool">
                 <h3><a href="https://github.com/reinhardtmarta/cfam" target="_blank" style="color: inherit; text-decoration: none;">CFAM</a></h3>
-                <p data-en="Deterministic filtering CLI tool for AI systems." data-pt="Ferramenta CLI de filtragem determinística para sistemas de IA.">
-                   Deterministic filtering CLI tool for AI systems.
+                <p data-en="Deterministic CLI filtering middleware for LLM output validation and content safety." data-pt="Middleware CLI de filtragem determinística para validação e segurança de saídas de LLM.">
+                   Deterministic CLI filtering middleware for LLM output validation and content safety.
                 </p>
-                <span class="tag" data-en="Tool" data-pt="Ferramenta">Tool</span>
+                <span class="tag">Python / CLI</span>
             </div>
 
-            <div class="card catalog-item" data-type="mvp">
-                <h3><a href="https://github.com/reinhardtmarta/logiflow" target="_blank" style="color: inherit; text-decoration: none;">LogiFlow</a></h3>
-                <p data-en="Food rescue and logistics mobile platform built with Flutter." data-pt="Plataforma mobile de resgate e logística feita com Flutter.">
-                   Food rescue and logistics mobile platform built with Flutter.
+            <div class="card catalog-item" data-type="lowlevel">
+                <h3><a href="https://github.com/reinhardtmarta/infiniteOS" target="_blank" style="color: inherit; text-decoration: none;">infiniteOS</a></h3>
+                <p data-en="Bare-metal diagnostic operating system kernel prototype written in C and Assembly." data-pt="Protótipo de kernel de sistema operacional de diagnóstico bare-metal escrito em C e Assembly.">
+                   Bare-metal diagnostic operating system kernel prototype written in C and Assembly.
                 </p>
-                <span class="tag" data-en="MVP" data-pt="MVP">MVP</span>
+                <span class="tag">C / Assembly / NASM</span>
             </div>
 
-            <div class="card catalog-item" data-type="prototype">
+            <div class="card catalog-item" data-type="tool">
                 <h3><a href="https://github.com/reinhardtmarta/scaa" target="_blank" style="color: inherit; text-decoration: none;">SCAA Architecture</a></h3>
-                <p data-en="Architecture prototype focused on workflow automation." data-pt="Protótipo de arquitetura focado em automação de fluxos.">
-                   Architecture prototype focused on workflow automation.
+                <p data-en="Experimental system design framework for secure autonomous AI agent orchestration." data-pt="Framework experimental de arquitetura de sistemas para orquestração segura de agentes de IA.">
+                   Experimental system design framework for secure autonomous AI agent orchestration.
                 </p>
-                <span class="tag" data-en="Prototype" data-pt="Protótipo">Prototype</span>
+                <span class="tag">Python / System Design</span>
             </div>
         </div>
     </section>
 
     <section>
-        <h2 data-en="Tech Stack & Tools" data-pt="Tecnologias & Ferramentas">Tech Stack & Tools</h2>
+        <h2 data-en="Tech Stack & Education" data-pt="Tecnologias & Formação">Tech Stack & Education</h2>
         <ul>
-            <li><strong>Linguagens:</strong> Python, Dart</li>
-            <li><strong>Frameworks:</strong> Flutter</li>
-            <li><strong>Dados:</strong> SQL (PostgreSQL, SQLite), Supabase, Firebase</li>
-            <li><strong>Integração:</strong> APIs, Fluxos de IA Determinísticos, Git</li>
+            <li><strong><span data-en="Education:" data-pt="Formação:">Education:</span></strong> Associate Degree in Systems Analysis and Development (UniFatecie - Expected 2028)</li>
+            <li><strong><span data-en="Certifications:" data-pt="Certificações:">Certifications:</span></strong> Google IT Support Professional Certificate, Data Analysis & AI (Indicium), Python & Digital Literacy (SENAI)</li>
+            <li><strong><span data-en="Languages:" data-pt="Linguagens:">Languages:</span></strong> TypeScript, Python, C, SQL, Assembly (NASM), Dart</li>
+            <li><strong><span data-en="Frameworks & Tools:" data-pt="Frameworks e Ferramentas:">Frameworks & Tools:</span></strong> React, Node.js, PostgreSQL, SQLite, Linux, Git/GitHub, GitHub Actions (CI/CD), VS Code</li>
         </ul>
     </section>
 
     <section>
         <h2 data-en="Philosophy" data-pt="Filosofia">Philosophy</h2>
-        <blockquote data-en='"Building functional, testable software through structured architecture and rapid prototyping."'
-                    data-pt='"Construindo software funcional e testável através de arquitetura estruturada e prototipagem rápida."'>
-            "Building functional, testable software through structured architecture and rapid prototyping."
+        <blockquote data-en='"Building functional solutions through structured experimentation, real tests, and persistent execution."'
+                    data-pt='"Construindo soluções funcionais através de experimentação estruturada, testes reais e execução consistente."'>
+            "Building functional solutions through structured experimentation, real tests, and persistent execution."
         </blockquote>
     </section>
 
