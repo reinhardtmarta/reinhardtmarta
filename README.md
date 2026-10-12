@@ -1,6 +1,6 @@
 <div align="center">
 
-[🇺🇸 English](README.md) | **Português 🇧🇷**
+[🇺🇸 English](README.en.md) | **Português 🇧🇷**
 Marta Reinhardt
 
 Desenvolvimento de Software · Prototipagem · Sistemas
