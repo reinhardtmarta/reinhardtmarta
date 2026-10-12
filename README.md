@@ -1,4 +1,4 @@
-<div align="center">"English" (README.en.md) · Português
+<div align="center">English" (README.en.md) · Português
 
 Marta Reinhardt
 
