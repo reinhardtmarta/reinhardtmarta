@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171719">
+    <meta name="description" content="Marta Reinhardt — Systems Analysis and Development student building and testing software solutions.">
+    <title>Marta Reinhardt — Portfolio</title>
+    <style>
+        :root {
+            --bg: #111112;
+            --surface: #1b1b1e;
+            --surface-raised: #222225;
+            --text: #f5f3f3;
+            --muted: #b2afb3;
+            --subtle: #858187;
+            --wine: #8f2948;
+            --wine-light: #bd5875;
+            --border: #373438;
+            --white: #ffffff;
+            --shadow: 0 18px 50px rgba(0, 0, 0, .22);
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+        body {
+            margin: 0;
+            background:
+                radial-gradient(ellipse at 50% -15%, rgba(143, 41, 72, .19), transparent 42%),
+                var(--bg);
+            color: var(--text);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.7;
+        }
+        a { color: inherit; }
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid var(--wine-light);
+            outline-offset: 4px;
+        }
+        .container { width: min(100% - 40px, 1040px); margin: 0 auto; }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 22px 0;
+            border-bottom: 1px solid rgba(255,255,255,.10);
+            flex-wrap: wrap;
+        }
+        .logo {
+            display: inline-grid;
+            place-items: center;
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--wine-light);
+            border-radius: 12px;
+            background: rgba(143, 41, 72, .13);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 800;
+            letter-spacing: .04em;
+            transition: background .2s, transform .2s;
+        }
+        .logo:hover { background: var(--wine); transform: translateY(-2px); }
+        .nav-links { display: flex; gap: clamp(12px, 2.5vw, 28px); list-style: none; padding: 0; margin: 0; }
+        .nav-links a {
+            color: var(--muted);
+            font-size: .92rem;
+            text-decoration: none;
+            transition: color .2s;
+        }
+        .nav-links a:hover, footer a:hover { color: var(--wine-light); }
+        .lang-switch { display: flex; gap: 6px; }
+        .lang-btn {
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--muted);
+            border-radius: 8px;
+            padding: 7px 11px;
+            font-weight: 750;
+            font-size: .78rem;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .lang-btn:hover { border-color: var(--wine-light); color: var(--white); }
+        .lang-btn.active { background: var(--wine); border-color: var(--wine); color: var(--white); }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: clamp(58px, 9vw, 100px) 0 70px;
+        }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin: 0 0 22px;
+            color: #d9a2b2;
+            font-size: .78rem;
+            font-weight: 750;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+        }
+        .eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--wine-light); }
+        .avatar {
+            display: grid;
+            place-items: center;
+            width: 82px;
+            height: 82px;
+            margin: 0 auto 22px;
+            border: 1px solid rgba(255,255,255,.24);
+            border-radius: 24px;
+            background: linear-gradient(145deg, #9e3556, #50192d);
+            box-shadow: 0 12px 34px rgba(143, 41, 72, .28);
+            color: var(--white);
+            font-size: 1.55rem;
+            font-weight: 800;
+            letter-spacing: .04em;
+        }
+        h1 {
+            margin: 0;
+            color: var(--white);
+            font-size: clamp(2.5rem, 6vw, 4.4rem);
+            line-height: 1.12;
+            letter-spacing: -.055em;
+        }
+        .subtitle {
+            max-width: 690px;
+            margin: 20px auto 28px;
+            color: var(--muted);
+            font-size: clamp(1rem, 2vw, 1.15rem);
+        }
+        .cta-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 45px;
+            padding: 10px 18px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: var(--surface);
+            color: var(--text);
+            font-size: .92rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform .2s, background .2s, border-color .2s;
+        }
+        .btn.primary { background: var(--wine); border-color: var(--wine); color: var(--white); }
+        .btn:hover { transform: translateY(-2px); border-color: var(--wine-light); }
+        .btn.primary:hover { background: #a33657; }
+
+        section {
+            margin: 0 0 24px;
+            padding: clamp(22px, 4vw, 34px);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: linear-gradient(145deg, rgba(34,34,37,.97), rgba(24,24,26,.97));
+            box-shadow: var(--shadow);
+        }
+        .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin: 0 0 22px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border);
+            color: var(--white);
+            font-size: 1.22rem;
+            letter-spacing: -.02em;
+        }
+        .section-heading::before {
+            content: "";
+            width: 4px;
+            height: 23px;
+            flex: 0 0 4px;
+            border-radius: 5px;
+            background: var(--wine-light);
+        }
+        section p { margin: 0; color: #d0cdd1; }
+        .filter-container { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 20px; }
+        .filter-btn {
+            padding: 8px 13px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: #171719;
+            color: var(--muted);
+            cursor: pointer;
+            font: inherit;
+            font-size: .82rem;
+            transition: all .2s;
+        }
+        .filter-btn:hover { color: var(--white); border-color: var(--wine-light); }
+        .filter-btn.active { color: var(--white); border-color: var(--wine); background: rgba(143,41,72,.23); }
+        .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+        .card {
+            position: relative;
+            min-width: 0;
+            padding: 22px;
+            border: 1px solid #3b383d;
+            border-radius: 13px;
+            background: rgba(17,17,18,.62);
+            transition: transform .22s, border-color .22s, background .22s;
+        }
+        .card:hover { transform: translateY(-4px); border-color: #824054; background: rgba(30,24,27,.9); }
+        .card h3 { margin: 0 0 10px; font-size: 1.05rem; letter-spacing: -.01em; }
+        .card h3 a { color: var(--white); text-decoration: none; }
+        .card h3 a:hover { color: #e5a4b8; }
+        .card p { color: var(--muted); font-size: .91rem; line-height: 1.65; }
+        .tag {
+            display: inline-block;
+            margin-top: 17px;
+            padding: 4px 9px;
+            border: 1px solid rgba(189,88,117,.35);
+            border-radius: 6px;
+            background: rgba(143,41,72,.12);
+            color: #e2a3b5;
+            font-size: .73rem;
+            font-weight: 650;
+        }
+        .details-list { list-style: none; padding: 0; margin: 0; }
+        .details-list li { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.07); color: #d0cdd1; }
+        .details-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+        .details-list strong { color: var(--white); }
+        blockquote {
+            margin: 0;
+            padding: 20px 22px;
+            border-left: 3px solid var(--wine-light);
+            border-radius: 0 12px 12px 0;
+            background: rgba(143,41,72,.10);
+            color: #f0e8eb;
+            font-size: 1.02rem;
+            font-style: italic;
+        }
+        footer {
+            padding: 24px 0 32px;
+            text-align: center;
+            color: var(--subtle);
+            font-size: .88rem;
+        }
+        footer p { margin: 7px 0; }
+        footer a { margin: 0 9px; color: var(--muted); text-decoration: none; transition: color .2s; }
+        .copyright { font-size: .8rem; color: #716d73; }
+
+        @media (max-width: 680px) {
+            .container { width: min(100% - 28px, 1040px); }
+            nav { justify-content: space-between; gap: 14px; }
+            .nav-links { order: 3; width: 100%; justify-content: center; padding-top: 4px; }
+            .nav-links a { font-size: .85rem; }
+            header { padding: 54px 0 48px; }
+            .grid { grid-template-columns: 1fr; }
+            section { border-radius: 14px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="Marta Reinhardt home">MR</a>
+        <ul class="nav-links">
+            <li><a href="#about" data-en="About" data-pt="Sobre">About</a></li>
+            <li><a href="#catalog" data-en="Projects" data-pt="Projetos">Projects</a></li>
+            <li><a href="https://github.com/reinhardtmarta" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="#contact" data-en="Contact" data-pt="Contato">Contact</a></li>
+        </ul>
+        <div class="lang-switch" aria-label="Choose language">
+            <button class="lang-btn active" id="btn-en" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" id="btn-pt" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+    </nav>
+
+    <header>
+        <p class="eyebrow" data-en="Portfolio · Software & Systems" data-pt="Portfólio · Software & Sistemas">Portfolio · Software & Systems</p>
+        <div class="avatar" aria-hidden="true">MR</div>
+        <h1>Marta Reinhardt</h1>
+        <p class="subtitle"
+           data-en="Systems Analysis & Development Student | Building & Testing Software Solutions"
+           data-pt="Estudante de Análise e Desenvolvimento de Sistemas | Desenvolvendo e Testando Soluções de Software">
+           Systems Analysis & Development Student | Building & Testing Software Solutions
+        </p>
+        <div class="cta-buttons">
+            <a href="#catalog" class="btn primary" data-en="Explore Projects" data-pt="Explorar Projetos">Explore Projects</a>
+            <a href="https://github.com/reinhardtmarta" class="btn" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2 class="section-heading" data-en="About Me" data-pt="Sobre Mim">About Me</h2>
+            <p data-en="I am a Systems Analysis and Development student focused on hands-on practice, system logic, and software prototyping. Certified in Google IT Support, I enjoy building tools, testing real code, and resolving technical problems through structured experimentation."
+               data-pt="Sou estudante de Análise e Desenvolvimento de Sistemas focada em prática real, lógica de sistemas e prototipagem de software. Possuo a certificação Google IT Support e gosto de construir ferramentas, testar código real e resolver problemas técnicos com experimentação estruturada.">
+               I am a Systems Analysis and Development student focused on hands-on practice, system logic, and software prototyping. Certified in Google IT Support, I enjoy building tools, testing real code, and resolving technical problems through structured experimentation.
+            </p>
+        </section>
+
+        <section id="catalog">
+            <h2 class="section-heading" data-en="Catalog & Projects" data-pt="Catálogo & Projetos">Catalog & Projects</h2>
+            <div class="filter-container" aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all" data-en="All projects" data-pt="Todos os projetos" aria-pressed="true">All projects</button>
+                <button class="filter-btn" data-filter="web" data-en="Web & MVPs" data-pt="Web & MVPs" aria-pressed="false">Web & MVPs</button>
+                <button class="filter-btn" data-filter="tool" data-en="CLI & AI Tools" data-pt="CLI & Ferramentas" aria-pressed="false">CLI & AI Tools</button>
+                <button class="filter-btn" data-filter="lowlevel" data-en="Low-Level & Experimental" data-pt="Baixo Nível & Experimentos" aria-pressed="false">Low-Level & Experimental</button>
+            </div>
+
+            <div class="grid">
+                <article class="card catalog-item" data-type="web">
+                    <h3><a href="https://github.com/reinhardtmarta/logiflow" target="_blank" rel="noopener noreferrer">LogiFlow ↗</a></h3>
+                    <p data-en="Food rescue and inventory marketplace built with React, TypeScript, and Google Gemma 4 AI."
+                       data-pt="Marketplace de resgate e estoque de alimentos construído com React, TypeScript e IA Google Gemma 4.">
+                       Food rescue and inventory marketplace built with React, TypeScript, and Google Gemma 4 AI.
+                    </p>
+                    <span class="tag">TypeScript / React / AI</span>
+                </article>
+
+                <article class="card catalog-item" data-type="tool">
+                    <h3><a href="https://github.com/reinhardtmarta/cfam" target="_blank" rel="noopener noreferrer">CFAM ↗</a></h3>
+                    <p data-en="Deterministic CLI filtering middleware for LLM output validation and content safety."
+                       data-pt="Middleware CLI de filtragem determinística para validação e segurança de saídas de LLM.">
+                       Deterministic CLI filtering middleware for LLM output validation and content safety.
+                    </p>
+                    <span class="tag">Python / CLI</span>
+                </article>
+
+                <article class="card catalog-item" data-type="lowlevel">
+                    <h3><a href="https://github.com/reinhardtmarta/infinit3OS" target="_blank" rel="noopener noreferrer">infinit3OS ↗</a></h3>
+                    <p data-en="Bare-metal diagnostic operating system kernel prototype written in C and Assembly."
+                       data-pt="Protótipo de kernel de sistema operacional de diagnóstico bare-metal escrito em C e Assembly.">
+                       Bare-metal diagnostic operating system kernel prototype written in C and Assembly.
+                    </p>
+                    <span class="tag">C / Assembly / NASM</span>
+                </article>
+
+                <article class="card catalog-item" data-type="tool">
+                    <h3><a href="https://github.com/reinhardtmarta/scaa" target="_blank" rel="noopener noreferrer">SCAA Architecture ↗</a></h3>
+                    <p data-en="Experimental system design framework for secure autonomous AI agent orchestration."
+                       data-pt="Framework experimental de arquitetura de sistemas para orquestração segura de agentes de IA.">
+                       Experimental system design framework for secure autonomous AI agent orchestration.
+                    </p>
+                    <span class="tag">Python / System Design</span>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-heading" data-en="Tech Stack & Education" data-pt="Tecnologias & Formação">Tech Stack & Education</h2>
+            <ul class="details-list">
+                <li><strong data-en="Education:" data-pt="Formação:">Education:</strong> <span data-en="Associate Degree in Systems Analysis and Development (UniFatecie - Expected 2028)" data-pt="Tecnólogo em Análise e Desenvolvimento de Sistemas (UniFatecie — conclusão prevista para 2028)">Associate Degree in Systems Analysis and Development (UniFatecie - Expected 2028)</span></li>
+                <li><strong data-en="Certifications:" data-pt="Certificações:">Certifications:</strong> <span data-en="Google IT Support Professional Certificate, Data Analysis & AI (Indicium), Python & Digital Literacy (SENAI)" data-pt="Google IT Support Professional Certificate, Análise de Dados & IA (Indicium), Python & Letramento Digital (SENAI)">Google IT Support Professional Certificate, Data Analysis & AI (Indicium), Python & Digital Literacy (SENAI)</span></li>
+                <li><strong data-en="Languages:" data-pt="Linguagens:">Languages:</strong> TypeScript, Python, C, SQL, Assembly (NASM), Dart</li>
+                <li><strong data-en="Frameworks & Tools:" data-pt="Frameworks e Ferramentas:">Frameworks & Tools:</strong> React, Node.js, PostgreSQL, SQLite, Linux, Git/GitHub, GitHub Actions (CI/CD), VS Code</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-heading" data-en="Philosophy" data-pt="Filosofia">Philosophy</h2>
+            <blockquote data-en="“Building functional solutions through structured experimentation, real tests, and persistent execution.”"
+                        data-pt="“Construindo soluções funcionais através de experimentação estruturada, testes reais e execução consistente.”">
+                “Building functional solutions through structured experimentation, real tests, and persistent execution.”
+            </blockquote>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>
+            <a href="https://github.com/reinhardtmarta" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/in/martareinhardt/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </p>
+        <p class="copyright">&copy; 2026 Marta Reinhardt</p>
+    </footer>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Language switcher
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const translatableElements = document.querySelectorAll('[data-pt][data-en]');
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            translatableElements.forEach(element => {
+                element.textContent = element.getAttribute(`data-${lang}`);
+            });
+
+            langButtons.forEach(button => {
+                const isActive = button.dataset.lang === lang;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', String(isActive));
+            });
+        }
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => setLanguage(button.dataset.lang));
+        });
+
+        // Project catalog filters
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const catalogItems = document.querySelectorAll('.catalog-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+
+                filterButtons.forEach(item => {
+                    const isActive = item === button;
+                    item.classList.toggle('active', isActive);
+                    item.setAttribute('aria-pressed', String(isActive));
+                });
+
+                catalogItems.forEach(item => {
+                    item.hidden = filter !== 'all' && item.dataset.type !== filter;
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
