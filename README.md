@@ -21,6 +21,8 @@
 <img src="https://img.shields.io/badge/Architecture-Deterministic_Data_Flow-darkgreen?style=flat-square" alt="Deterministic Data Flow" />
 <img src="https://img.shields.io/badge/Philosophy-MVP_First-purple?style=flat-square" alt="MVP First" />
 
+
+|
 <img src="me.gif" alt="Loading..." width="500"/>
 
 </div>
