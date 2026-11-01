@@ -31,10 +31,17 @@
 "Still surface, move depth"
 
 
+
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true" alt="Estatísticas da Marta" />
+<img
+  src="https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true"
+  alt="Estatísticas da Marta"
+/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true" alt="Linguagens mais utilizadas" />
+<img
+  src="https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true"
+  alt="Linguagens mais utilizadas"
+/>
 
 </div>
