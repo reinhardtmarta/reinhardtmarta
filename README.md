@@ -32,6 +32,6 @@
 
 
 
-<img src="https://github-readme-stats.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Marta's GitHub Stats" />
+<img src="https://reinhardtmarta.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Estatísticas da Marta" />
 
 
