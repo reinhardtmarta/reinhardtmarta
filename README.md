@@ -30,6 +30,5 @@
 "Still surface, move depth"
 
 
-<img src="https://github-readme-stats.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true&v=2" alt="Statistics" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true&v=2" alt="Code" />
+![Statistics](https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&v=3)
