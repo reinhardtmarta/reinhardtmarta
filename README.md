@@ -30,8 +30,6 @@
 
 "Still surface, move depth"
 
-<img src="https://Reinhardtmarta-6k62tw5xj-leapstate.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true" alt="Top Linguagens" />
+<<img src="https://github-readme-stats-ochre-seven-86.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Statistics" />
 
-
-
-<img src="https://reinhardtmarta-6k62tw5xj-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Status" />
+<img src="https://github-readme-stats-ochre-seven-86.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true" alt="Linguagens mais usadas" />
