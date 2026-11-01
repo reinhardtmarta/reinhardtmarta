@@ -32,16 +32,7 @@
 
 
 
-<div align="center">
 
-<img
-  src="https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true"
-  alt="Estatísticas da Marta"
-/>
+![Statistics](https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true&v=2)
 
-<img
-  src="https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true"
-  alt="Linguagens mais utilizadas"
-/>
-
-</div>
+![Code](https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true&v=2)
