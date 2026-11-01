@@ -1,10 +1,10 @@
 <div align="center">
 
-# Olá, eu sou a Marta! 👋
-# Hello ,I´m Marta  👋
+### Olá, eu sou a Marta! 👋
+### Hello ,I´m Marta  👋
 
 
-## LOADING... 
+#### LOADING... 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
@@ -27,7 +27,7 @@
 </div>
 
 
-"Still surface, move depth"
+##### "Still surface, moving depth"
 
 
 
