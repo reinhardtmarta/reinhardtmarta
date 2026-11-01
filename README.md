@@ -31,4 +31,4 @@
 "Still surface, endless depth"
 |
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
+<img src="https://raw.githubusercontent.com/reinhardtmarta/reinhardtmarta/output/github-contribution-grid-snake.svg" alt="Snake animation" />
