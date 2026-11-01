@@ -32,7 +32,4 @@
 
 
 
-<img src="https://reinhardtmarta-6k62tw5xj-leapstate.vercel.appa
-username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Estatísticas da Marta" />
-
-
+<img src="https://Reinhardtmarta-6k62tw5xj-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="Estatísticas da Marta" />
