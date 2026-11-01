@@ -31,4 +31,10 @@
 
 
 
-![Statistics](https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&v=3)
+|
+
+
+![Estatísticas da Marta](https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark)
+
+![Linguagens mais utilizadas](https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api/top-langs/?username=reinhardtmarta&layout=compact&theme=dark)
+
