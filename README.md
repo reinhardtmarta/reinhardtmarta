@@ -13,6 +13,7 @@
 <img src="https://shields.io" alt="GitHub" />
 <img src="https://shields.io" alt="IA" />
 
+---
 
 
 <img src="me.gif" alt="Loading..." width="500"/>
