@@ -30,4 +30,5 @@
 "Still surface, move depth"
 
 
- https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark
+
+<img src="https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark" alt="Estatísticas" />
