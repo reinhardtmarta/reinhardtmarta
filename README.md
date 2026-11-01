@@ -31,4 +31,4 @@
 
 
 
-<img src="https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark" alt="Estatísticas" />
+![Estatísticas](https://github-readme-stats-oxv3-q7vz77dfs-leapstate.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark)
