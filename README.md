@@ -28,7 +28,8 @@
 </div>
 
 
-"Still surface, endless depth"
+"Still surface, move depth"
 |
 
-<img src="https://raw.githubusercontent.com/reinhardtmarta/reinhardtmarta/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+<img src="https://github-readme-stats.vercel.app/api?username=reinhardtmarta&show_icons=true&theme=dark&hide_border=true" alt="Marta's GitHub Stats" />
+
